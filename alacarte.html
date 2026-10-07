@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu À La Carte | Hotel Fênix</title>
+    <meta name="description" content="Menu à la carte do Hotel Fênix com opções individuais preparadas na hora.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="alacarte-page">
+    <div class="bg-shape bg-shape--left" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape--right" aria-hidden="true"></div>
+
+    <header class="hero">
+        <div class="logo-showcase">
+            <img class="hotel-logo" src="https://irp.cdn-website.com/d49a2ccc/dms3rep/multi/opt/logo_hotel_fenix-177w.png" alt="Logo do Hotel Fênix">
+        </div>
+
+        <p class="kicker">Hotel Fênix</p>
+        <h1>Menu À La Carte</h1>
+        <p class="subtitle">Cardápio do restaurante com pratos preparados na hora, opções individuais e para compartilhar.</p>
+
+        <div class="service-info">
+            <span>À La Carte: 12:00 - 22:00</span>
+        </div>
+    </header>
+
+    <section class="search-bar-wrap" aria-label="Pesquisa do menu à la carte">
+        <label for="alacarte-search" class="search-label">Pesquisar prato</label>
+        <input type="search" id="alacarte-search" class="food-search" placeholder="Ex.: peixe, frango, massa, sobremesa..." autocomplete="off">
+        <p class="search-hint" id="alacarte-search-feedback">Digite para filtrar os itens do à la carte.</p>
+    </section>
+
+    <nav class="week-nav" aria-label="Categorias do à la carte">
+        <button type="button" class="day-btn is-active" data-category="entradas">Entradas</button>
+        <button type="button" class="day-btn" data-category="proteinas">Carnes, Frangos e Peixes</button>
+        <button type="button" class="day-btn" data-category="moquecas-massas">Moquecas e Massas</button>
+        <button type="button" class="day-btn" data-category="cafe-servicos">Chá, Café e Serviços</button>
+    </nav>
+
+    <main class="menu-stack">
+        <section class="menu-card alacarte-category is-visible" data-category="entradas" aria-labelledby="alacarte-entradas">
+            <h2 id="alacarte-entradas">Entradas</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Saladas</h3>
+                    <ul class="dish-list">
+                        <li>Salada Simples - R$ 24,90 <span class="item-note">Tomate, alface, cebola e rúcula.</span></li>
+                        <li>Salada Mista - R$ 29,90 <span class="item-note">Legumes cozidos, queijo, presunto, ovo cozido, tomate, cebola, alface e azeitonas.</span></li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sopas</h3>
+                    <ul class="dish-list">
+                        <li>Canja à Brasileira - R$ 29,90 <span class="item-note">Arroz, frango desfiado e legumes.</span></li>
+                        <li>Sopa de Legumes - R$ 29,90 <span class="item-note">Legumes diversos.</span></li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Omeletes</h3>
+                    <ul class="dish-list">
+                        <li>Omelete com Queijo - R$ 19,90</li>
+                        <li>Omelete com Queijo, Presunto e Tomate - R$ 24,90</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Porções Diversas</h3>
+                    <ul class="dish-list">
+                        <li>Ovo Frito (unidade) - R$ 4,90</li>
+                        <li>Arroz - R$ 12,00</li>
+                        <li>Feijão - R$ 12,00</li>
+                        <li>Farofa - R$ 10,00</li>
+                        <li>Purê de Batata - R$ 14,00</li>
+                        <li>Batata Frita (400g) - R$ 39,90</li>
+                        <li>Aipim Frito (400g) - R$ 23,90</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Linguiça</h3>
+                    <ul class="dish-list">
+                        <li>Toscana Grelhada - 1 pessoa: R$ 34,90 | 2 pessoas: R$ 54,90 <span class="item-note">Toscana grelhada, arroz branco, feijão tropeiro, fritas e vinagrete.</span></li>
+                        <li>Toscana à Cavalo - 1 pessoa: R$ 36,90 | 2 pessoas: R$ 69,90 <span class="item-note">Toscana grelhada, arroz branco, feijão tropeiro, ovo frito, fritas e vinagrete.</span></li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Gelados</h3>
+                    <ul class="dish-list">
+                        <li>Açaí - R$ 19,90</li>
+                        <li>Picolés - Consultar no bar</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card alacarte-category" data-category="proteinas" aria-labelledby="alacarte-proteinas">
+            <h2 id="alacarte-proteinas">Carnes, Frangos e Peixes</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Carnes</h3>
+                    <ul class="dish-list">
+                        <li>Miolo de Alcatra Bovino Grelhado - R$ 57,90 <span class="item-note">Filé grelhado, arroz branco, feijão, farofa, batata frita e salada.</span></li>
+                        <li>Miolo de Alcatra Bovino à Cavalo - 1 pessoa: R$ 59,90 | 2 pessoas: R$ 109,90 <span class="item-note">Filé grelhado, arroz branco, feijão, ovo frito, farofa, batata frita e salada.</span></li>
+                        <li>Miolo de Alcatra Bovino à Milanesa - 1 pessoa: R$ 59,90 | 2 pessoas: R$ 99,90 <span class="item-note">Filé empanado, arroz branco e purê.</span></li>
+                        <li>Miolo de Alcatra Bovino à Parmegiana - 1 pessoa: R$ 59,90 | 2 pessoas: R$ 109,90 <span class="item-note">Filé, queijo, molho de tomate, arroz, purê ou batata frita.</span></li>
+                        <li>Picanha Grelhada (500g) - R$ 149,90 <span class="item-note">Arroz, feijão tropeiro, vinagrete, farofa e batata frita.</span></li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Frangos</h3>
+                    <ul class="dish-list">
+                        <li>Filé de Frango Grelhado - R$ 44,90 <span class="item-note">Filé de frango grelhado, arroz branco, feijão, farofa, batata frita e salada.</span></li>
+                        <li>Filé de Frango à Cavalo - 1 pessoa: R$ 46,90 | 2 pessoas: R$ 79,90 <span class="item-note">Filé de frango grelhado, arroz branco, feijão, ovo frito, farofa, batata frita e salada.</span></li>
+                        <li>Filé de Frango à Milanesa - 1 pessoa: R$ 44,90 | 2 pessoas: R$ 79,90 <span class="item-note">Filé de frango empanado, arroz branco e purê.</span></li>
+                        <li>Filé de Frango à Parmegiana - 1 pessoa: R$ 59,90 | 2 pessoas: R$ 109,90 <span class="item-note">Filé de frango, queijo, molho de tomate, arroz, purê ou batata frita.</span></li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Peixes</h3>
+                    <ul class="dish-list">
+                        <li>Filé de Peixe Grelhado - R$ 69,90 <span class="item-note">Filé de peixe grelhado, arroz, feijão e legumes.</span></li>
+                        <li>Filé de Peixe à Milanesa - 1 pessoa: R$ 59,90 | 2 pessoas: R$ 99,90 <span class="item-note">Filé de peixe empanado, arroz, feijão, legumes e purê.</span></li>
+                        <li>Filé de Peixe ao Molho de Camarão - 1 pessoa: R$ 79,90 | 2 pessoas: R$ 139,90 <span class="item-note">Filé de peixe grelhado, molho de camarão, arroz, feijão e purê.</span></li>
+                        <li>Peixe Inteiro Frito - R$ 149,90 <span class="item-note">Arroz, feijão, farofa, batata frita e salada.</span></li>
+                        <li>Peixe ao Molho Branco - R$ 189,90 <span class="item-note">Filé de peixe grelhado, purê de batata ou batata frita, arroz e salada.</span></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card alacarte-category" data-category="moquecas-massas" aria-labelledby="alacarte-moquecas-massas">
+            <h2 id="alacarte-moquecas-massas">Moquecas e Massas</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Moquecas</h3>
+                    <ul class="dish-list">
+                        <li>Moqueca de Peixe - 1 pessoa: R$ 89,90 | 2 pessoas: R$ 159,90 <span class="item-note">Dourado, molho à base de leite de coco, azeite de dendê, pimentão, cebola, arroz, pirão e salada simples.</span></li>
+                        <li>Moqueca Mista - 1 pessoa: R$ 99,90 | 2 pessoas: R$ 189,90 <span class="item-note">Dourado, camarão, molho à base de leite de coco, azeite de dendê, pimentão, cebola, arroz e pirão.</span></li>
+                        <li>Bobó de Camarão - 1 pessoa: R$ 79,00 | 2 pessoas: R$ 129,90 <span class="item-note">Filé de camarão ao creme de aipim, arroz e salada simples.</span></li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Massas (Talharim / Spaguetti / Fusili)</h3>
+                    <ul class="dish-list">
+                        <li>Massa Molho de Tomate ao Sugo - 1 pessoa: R$ 49,90 | 2 pessoas: R$ 89,90</li>
+                        <li>Massa Alho e Óleo - 1 pessoa: R$ 39,90 | 2 pessoas: R$ 69,90</li>
+                        <li>Massa ao Molho Branco - 1 pessoa: R$ 49,90 | 2 pessoas: R$ 89,90</li>
+                        <li>Massa à Bolonhesa - 1 pessoa: R$ 49,90 | 2 pessoas: R$ 89,90</li>
+                        <li>Adicione uma Proteína 100g - R$ 19,90 <span class="item-note">Frango, carne ou peixe.</span></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card alacarte-category" data-category="cafe-servicos" aria-labelledby="alacarte-cafe-servicos">
+            <h2 id="alacarte-cafe-servicos">Chá, Café e Serviços</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Chá, Café e Leite</h3>
+                    <ul class="dish-list">
+                        <li>Pedaço de Bolo - R$ 8,00</li>
+                        <li>Chá da Tarde - R$ 17,00 <span class="item-note">Bule de chá ou café e leite, torradas, manteiga e geleia sachê.</span></li>
+                        <li>Café Expresso (3 Corações) - R$ 7,00</li>
+                        <li>Cappuccino (3 Corações) - R$ 8,00</li>
+                        <li>Chocolatto (3 Corações) - R$ 8,00</li>
+                        <li>Chá com Torradas - R$ 12,90</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Serviços e Itens</h3>
+                    <ul class="dish-list">
+                        <li>Empréstimo de Material - R$ 5,50 <span class="item-note">Garfo, faca, colher, prato e copo acrílico.</span></li>
+                        <li>Balde com Gelo - R$ 12,00</li>
+                        <li>Cobramos Taxa de 10%</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="section-switch" aria-label="Navegar entre seções do cardápio">
+        <a class="switch-btn" href="jantar.html">Jantar</a>
+        <a class="switch-btn" href="bar.html">Bar</a>
+        <a class="switch-btn is-current" href="alacarte.html" aria-current="page">À La Carte</a>
+    </div>
+
+    <script src="alacarte.js"></script>
+</body>
+</html>

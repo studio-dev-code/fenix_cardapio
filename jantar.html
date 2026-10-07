@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | Hotel Fênix Porto Seguro</title>
+    <meta name="description" content="Cardápio de jantar do Hotel Fênix em Porto Seguro. Sabores regionais, frutos do mar e opções para toda a família.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-shape bg-shape--left" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape--right" aria-hidden="true"></div>
+
+    <header class="hero">
+        <div class="logo-showcase">
+            <img class="hotel-logo" src="https://irp.cdn-website.com/d49a2ccc/dms3rep/multi/opt/logo_hotel_fenix-177w.png" alt="Logo do Hotel Fênix">
+        </div>
+
+        <p class="kicker">Hotel Fênix</p>
+        <h1>Cardápio de Jantar</h1>
+        <p class="subtitle">No Hotel Fênix, cada noite é uma experiência memorável: gastronomia de alto padrão, atendimento impecável e sabores que conquistam desde o primeiro prato.</p>
+
+        <div class="pricing-strip" aria-label="Valores do jantar">
+            <p><span>Buffet por pessoa:</span> R$ 49,90</p>
+            <p><span>Crianças (6 anos ou mais):</span> R$ 24,90</p>
+            <p><span>Crianças até 5 anos:</span> não pagam</p>
+        </div>
+
+        <div class="service-info">
+            <span>Serviço: 19:00 - 21:00</span>
+        </div>
+
+    </header>
+
+    <nav class="week-nav" aria-label="Cardápio por dia">
+        <button type="button" class="day-btn" data-day="segunda">Segunda-feira</button>
+        <button type="button" class="day-btn" data-day="terca">Terça-feira</button>
+        <button type="button" class="day-btn" data-day="quarta">Quarta-feira</button>
+        <button type="button" class="day-btn" data-day="quinta">Quinta-feira</button>
+        <button type="button" class="day-btn" data-day="sexta">Sexta-feira</button>
+        <button type="button" class="day-btn" data-day="sabado">Sábado</button>
+        <button type="button" class="day-btn" data-day="domingo">Domingo</button>
+    </nav>
+
+    <section class="day-status" aria-live="polite" aria-atomic="true">
+        <p class="day-status__title">Cardápio exibido</p>
+        <p class="day-status__value" id="current-day-label">Carregando dia...</p>
+        <p class="day-status__hint">Toque em um botão para consultar os demais dias.</p>
+    </section>
+
+    <section class="search-bar-wrap" aria-label="Pesquisa de alimentos">
+        <label for="food-search" class="search-label">Pesquisar alimento no dia exibido</label>
+        <input type="search" id="food-search" class="food-search" placeholder="Ex.: rúcula, frango, pudim, moqueca..." autocomplete="off">
+        <p class="search-hint" id="search-feedback">Digite para filtrar os itens do cardápio.</p>
+    </section>
+
+    <main class="menu-stack">
+        <section class="menu-card day-menu" data-day="segunda" aria-labelledby="segunda-feira">
+            <h2 id="segunda-feira">Segunda-feira</h2>
+
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Salada</h3>
+                    <ul class="dish-list" aria-label="Itens de salada de segunda-feira">
+                        <li>Alface crespa</li>
+                        <li>Rúcula</li>
+                        <li>Berinjela à dorê</li>
+                        <li>Chuchu à moda</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sopa</h3>
+                    <ul class="dish-list" aria-label="Sopa de segunda-feira">
+                        <li>Creme de legumes</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Massas</h3>
+                    <ul class="dish-list" aria-label="Massas de segunda-feira">
+                        <li>Cannelloni</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Pratos Principais</h3>
+                    <ul class="dish-list" aria-label="Pratos principais de segunda-feira">
+                        <li>Toscana ao forno</li>
+                        <li>Frango com quiabo</li>
+                        <li>Filé à parmegiana</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Acompanhamentos</h3>
+                    <ul class="dish-list" aria-label="Acompanhamentos de segunda-feira">
+                        <li>Arroz branco</li>
+                        <li>Feijão em caldo</li>
+                        <li>Batata sauté</li>
+                        <li>Angu à mineira</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sobremesas</h3>
+                    <ul class="dish-list" aria-label="Sobremesas de segunda-feira">
+                        <li>Pudim de leite</li>
+                        <li>Gelatina colorida</li>
+                        <li>Doce de leite</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card day-menu" data-day="terca" aria-labelledby="terca-feira">
+            <h2 id="terca-feira">Terça-feira</h2>
+
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Salada</h3>
+                    <ul class="dish-list" aria-label="Itens de salada de terça-feira">
+                        <li>Alface crespa</li>
+                        <li>Rúcula</li>
+                        <li>Cenoura vick</li>
+                        <li>Abobrinha à moda temperada</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sopa</h3>
+                    <ul class="dish-list" aria-label="Sopa de terça-feira">
+                        <li>Caldo verde</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Massas</h3>
+                    <ul class="dish-list" aria-label="Massas de terça-feira">
+                        <li>Espaguete alho e óleo</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Pratos Principais</h3>
+                    <ul class="dish-list" aria-label="Pratos principais de terça-feira">
+                        <li>Filé de peixe dorê</li>
+                        <li>Bife acebolado</li>
+                        <li>Strogonoff de frango</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Acompanhamentos</h3>
+                    <ul class="dish-list" aria-label="Acompanhamentos de terça-feira">
+                        <li>Arroz branco</li>
+                        <li>Feijão em caldo</li>
+                        <li>Purê de batata</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sobremesas</h3>
+                    <ul class="dish-list" aria-label="Sobremesas de terça-feira">
+                        <li>Pudim de leite</li>
+                        <li>Gelatina</li>
+                        <li>Manjar de coco com calda de ameixa</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card day-menu" data-day="quarta" aria-labelledby="quarta-feira">
+            <h2 id="quarta-feira">Quarta-feira</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Salada</h3>
+                    <ul class="dish-list" aria-label="Itens de salada de quarta-feira">
+                        <li>Alface e rúcula</li>
+                        <li>Penagê de legumes</li>
+                        <li>Tomate à juliana com molho rosé</li>
+                        <li>Beringela à dorê</li>
+                        <li>Tomate recheado e assado no forno</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sopa</h3>
+                    <ul class="dish-list" aria-label="Sopa de quarta-feira">
+                        <li>Canja à brasileira</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Massas</h3>
+                    <ul class="dish-list" aria-label="Massas de quarta-feira">
+                        <li>Lasanha de carne</li>
+                        <li>Cannelloni</li>
+                        <li>Rondelli</li>
+                        <li>Nhoque ao sugo</li>
+                        <li>Espaguete à bolonhesa</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Pratos Principais</h3>
+                    <ul class="dish-list" aria-label="Pratos principais de quarta-feira">
+                        <li>Mini almôndegas ao molho sugo</li>
+                        <li>Frango assado ao molho da casa</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Acompanhamentos</h3>
+                    <ul class="dish-list" aria-label="Acompanhamentos de quarta-feira">
+                        <li>Torradas com pasta de alho e ervas</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sobremesas</h3>
+                    <ul class="dish-list" aria-label="Sobremesas de quarta-feira">
+                        <li>Pudim de leite</li>
+                        <li>Gelatina cremosa</li>
+                        <li>Mousse de chocolate</li>
+                        <li>Crostata de frutas</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card day-menu" data-day="quinta" aria-labelledby="quinta-feira">
+            <h2 id="quinta-feira">Quinta-feira</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Salada</h3>
+                    <ul class="dish-list" aria-label="Itens de salada de quinta-feira">
+                        <li>Alface</li>
+                        <li>Rúcula</li>
+                        <li>Tabule</li>
+                        <li>Cenoura vick</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sopa</h3>
+                    <ul class="dish-list" aria-label="Sopa de quinta-feira">
+                        <li>Minestrone</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Massas</h3>
+                    <ul class="dish-list" aria-label="Massas de quinta-feira">
+                        <li>Talharim ao molho suco</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Pratos Principais</h3>
+                    <ul class="dish-list" aria-label="Pratos principais de quinta-feira">
+                        <li>Frango à portuguesa</li>
+                        <li>Toscana assada com batata</li>
+                        <li>Picadinho de carne</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Acompanhamentos</h3>
+                    <ul class="dish-list" aria-label="Acompanhamentos de quinta-feira">
+                        <li>Arroz branco</li>
+                        <li>Feijão em caldo</li>
+                        <li>Purê de batata</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sobremesas</h3>
+                    <ul class="dish-list" aria-label="Sobremesas de quinta-feira">
+                        <li>Pudim de leite</li>
+                        <li>Gelatina colorida</li>
+                        <li>Mousse de limão</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card day-menu" data-day="sexta" aria-labelledby="sexta-feira">
+            <h2 id="sexta-feira">Sexta-feira</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Salada</h3>
+                    <ul class="dish-list" aria-label="Itens de salada de sexta-feira">
+                        <li>Alface</li>
+                        <li>Rúcula</li>
+                        <li>Maionese de batata e cenoura</li>
+                        <li>Salada fusili ao molho branco</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sopa</h3>
+                    <ul class="dish-list" aria-label="Sopa de sexta-feira">
+                        <li>Caldo de mandioca com jabá desfiada</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Massas</h3>
+                    <ul class="dish-list" aria-label="Massas de sexta-feira">
+                        <li>Espaguete à bolonhesa</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Pratos Principais</h3>
+                    <ul class="dish-list" aria-label="Pratos principais de sexta-feira">
+                        <li>Filé de peixe à dorê</li>
+                        <li>Pernil suíno ao molho de abacaxi</li>
+                        <li>Dobradinha</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Acompanhamentos</h3>
+                    <ul class="dish-list" aria-label="Acompanhamentos de sexta-feira">
+                        <li>Arroz branco</li>
+                        <li>Feijão nordestino</li>
+                        <li>Jabá com jerimum</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sobremesas</h3>
+                    <ul class="dish-list" aria-label="Sobremesas de sexta-feira">
+                        <li>Pudim de leite</li>
+                        <li>Gelatina colorida</li>
+                        <li>Cocada cremosa</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card day-menu" data-day="sabado" aria-labelledby="sabado">
+            <h2 id="sabado">Sábado</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Salada</h3>
+                    <ul class="dish-list" aria-label="Itens de salada de sábado">
+                        <li>Alface</li>
+                        <li>Rúcula</li>
+                        <li>Ovos à moda russa</li>
+                        <li>Maionese de frango</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sopa</h3>
+                    <ul class="dish-list" aria-label="Sopa de sábado">
+                        <li>Sopa à moda da casa</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Massas</h3>
+                    <ul class="dish-list" aria-label="Massas de sábado">
+                        <li>Cannelloni</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Pratos Principais</h3>
+                    <ul class="dish-list" aria-label="Pratos principais de sábado">
+                        <li>Linguiça toscana assada</li>
+                        <li>Peixe à milanesa</li>
+                        <li>Fricassê de frango</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Acompanhamentos</h3>
+                    <ul class="dish-list" aria-label="Acompanhamentos de sábado">
+                        <li>Arroz branco</li>
+                        <li>Feijão em caldo</li>
+                        <li>Batata sautê</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sobremesas</h3>
+                    <ul class="dish-list" aria-label="Sobremesas de sábado">
+                        <li>Pudim de leite</li>
+                        <li>Gelatina cremosa</li>
+                        <li>Pavê de chocolate</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="menu-card day-menu" data-day="domingo" aria-labelledby="domingo">
+            <h2 id="domingo">Domingo</h2>
+            <div class="day-groups">
+                <article class="day-group">
+                    <h3>Salada</h3>
+                    <ul class="dish-list" aria-label="Itens de salada de domingo">
+                        <li>Alface</li>
+                        <li>Rúcula</li>
+                        <li>Salpicão de frango</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sopa</h3>
+                    <ul class="dish-list" aria-label="Sopa de domingo">
+                        <li>Canja à brasileira</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Massas</h3>
+                    <ul class="dish-list" aria-label="Massas de domingo">
+                        <li>Torradas com pasta de alho</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Pratos Principais</h3>
+                    <ul class="dish-list" aria-label="Pratos principais de domingo">
+                        <li>Bobó de camarão</li>
+                        <li>Moqueca de peixe</li>
+                        <li>Escalope de filet</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Acompanhamentos</h3>
+                    <ul class="dish-list" aria-label="Acompanhamentos de domingo">
+                        <li>Arroz branco</li>
+                        <li>Feijão em caldo</li>
+                        <li>Pirão de peixe</li>
+                        <li>Caruru</li>
+                        <li>Vatapá</li>
+                    </ul>
+                </article>
+
+                <article class="day-group">
+                    <h3>Sobremesas</h3>
+                    <ul class="dish-list" aria-label="Sobremesas de domingo">
+                        <li>Pudim de leite</li>
+                        <li>Gelatina colorida</li>
+                        <li>Manjar de coco com calda de ameixa</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div class="section-switch" aria-label="Navegar entre seções do cardápio">
+        <a class="switch-btn is-current" href="jantar.html" aria-current="page">Jantar</a>
+        <a class="switch-btn" href="bar.html">Bar</a>
+        <a class="switch-btn" href="alacarte.html">À La Carte</a>
+    </div>
+
+    <script>
+        (function () {
+            var dayMap = ["domingo", "segunda", "terca", "quarta", "quinta", "sexta", "sabado"];
+            var dayLabels = {
+                domingo: "Domingo",
+                segunda: "Segunda-feira",
+                terca: "Terça-feira",
+                quarta: "Quarta-feira",
+                quinta: "Quinta-feira",
+                sexta: "Sexta-feira",
+                sabado: "Sábado"
+            };
+            var today = dayMap[new Date().getDay()];
+            var buttons = document.querySelectorAll(".day-btn");
+            var menus = document.querySelectorAll(".day-menu");
+            var dayLabel = document.getElementById("current-day-label");
+            var searchInput = document.getElementById("food-search");
+            var searchFeedback = document.getElementById("search-feedback");
+
+            function normalizeText(text) {
+                return text
+                    .toLowerCase()
+                    .normalize("NFD")
+                    .replace(/[\u0300-\u036f]/g, "");
+            }
+
+            function applyFilter() {
+                var query = searchInput ? normalizeText(searchInput.value.trim()) : "";
+                var activeMenu = document.querySelector(".day-menu.is-visible");
+
+                if (!activeMenu) {
+                    return;
+                }
+
+                var groups = activeMenu.querySelectorAll(".day-group");
+                var visibleItems = 0;
+
+                groups.forEach(function (group) {
+                    var items = group.querySelectorAll(".dish-list li");
+                    var hasVisibleInGroup = false;
+
+                    items.forEach(function (item) {
+                        var match = !query || normalizeText(item.textContent).indexOf(query) !== -1;
+                        item.style.display = match ? "" : "none";
+
+                        if (match) {
+                            hasVisibleInGroup = true;
+                            visibleItems += 1;
+                        }
+                    });
+
+                    group.style.display = hasVisibleInGroup ? "" : "none";
+                });
+
+                if (!searchFeedback) {
+                    return;
+                }
+
+                if (!query) {
+                    searchFeedback.textContent = "Digite para filtrar os itens do cardápio.";
+                } else if (visibleItems === 0) {
+                    searchFeedback.textContent = "Nenhum alimento encontrado para esta busca no dia selecionado.";
+                } else {
+                    searchFeedback.textContent = "Itens encontrados: " + visibleItems + ".";
+                }
+            }
+
+            function showDay(day) {
+                menus.forEach(function (menu) {
+                    var isTarget = menu.getAttribute("data-day") === day;
+                    menu.classList.toggle("is-visible", isTarget);
+                });
+
+                buttons.forEach(function (button) {
+                    var isTarget = button.getAttribute("data-day") === day;
+                    button.classList.toggle("is-active", isTarget);
+                });
+
+                if (dayLabel) {
+                    dayLabel.textContent = dayLabels[day] || "Dia selecionado";
+                }
+
+                applyFilter();
+            }
+
+            buttons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    showDay(button.getAttribute("data-day"));
+                });
+            });
+
+            if (searchInput) {
+                searchInput.addEventListener("input", applyFilter);
+            }
+
+            showDay(today);
+        })();
+    </script>
+</body>
+</html>
