@@ -189,15 +189,15 @@ h1 {
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	width: 156px;
-	padding: 10px 14px;
+	min-width: 0;
+	padding: 11px 16px;
 	border-radius: 999px;
 	text-decoration: none;
 	font-weight: 700;
-	font-size: 0.9rem;
+	font-size: 0.92rem;
 	letter-spacing: 0.02em;
 	text-align: center;
-	white-space: nowrap;
+	white-space: normal;
 	color: #ffffff;
 	background: linear-gradient(120deg, #0b5d8f 0%, #0d7ab7 58%, #ed982d 100%);
 	border: 1px solid rgba(255, 255, 255, 0.35);
@@ -577,9 +577,63 @@ h3 {
 		font-size: 0.9rem;
 	}
 
+	.week-nav {
+		padding: 12px 16px 8px;
+		gap: 10px;
+	}
+
 	.menu-card {
 		border-radius: 18px;
 		padding: 18px 16px 10px;
+	}
+
+	.menu-stack {
+		padding: 12px 16px 96px;
+		gap: 18px;
+	}
+
+	.day-group {
+		padding: 14px 12px;
+	}
+
+	.dish-list {
+		gap: 10px;
+	}
+
+	.dish-list li {
+		font-size: 0.92rem;
+		line-height: 1.46;
+		padding: 10px 10px 10px 26px;
+	}
+
+	.item-note {
+		font-size: 0.82rem;
+	}
+
+	/* No Bar, as categorias ficam em trilha horizontal para evitar "embolado" */
+	.bar-page .week-nav {
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		overflow-x: auto;
+		overscroll-behavior-x: contain;
+		scroll-snap-type: x proximity;
+		padding-bottom: 10px;
+	}
+
+	.bar-page .week-nav::-webkit-scrollbar {
+		height: 6px;
+	}
+
+	.bar-page .week-nav::-webkit-scrollbar-thumb {
+		background: rgba(15, 84, 133, 0.35);
+		border-radius: 999px;
+	}
+
+	.bar-page .day-btn {
+		flex: 0 0 auto;
+		min-width: 128px;
+		padding: 10px 12px;
+		scroll-snap-align: start;
 	}
 
 	.day-status__value {
@@ -601,9 +655,8 @@ h3 {
 	}
 
 	.switch-btn {
-		width: 132px;
-		padding: 9px 11px;
-		font-size: 0.8rem;
+		padding: 10px 14px;
+		font-size: 0.86rem;
 	}
 
 
@@ -615,9 +668,18 @@ h3 {
 	}
 
 	.switch-btn {
-		width: 122px;
-		padding: 8px 10px;
-		font-size: 0.76rem;
+		padding: 9px 12px;
+		font-size: 0.82rem;
+	}
+
+	.bar-page .section-switch {
+		bottom: 10px;
 	}
 }
+
+	.bar-page .day-btn {
+		min-width: 116px;
+		font-size: 0.82rem;
+		padding: 9px 10px;
+	}
 }
